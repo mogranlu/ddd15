@@ -4,8 +4,9 @@ import java.util.UUID;
 
 public class Student {
 
-    private UUID id;
-    private Schedule schedule;
+	private int numberOfClassesInSemester;
+	private UUID id;
+	private Schedule schedule;
 
     public Student(){
         this.id = UUID.randomUUID();
