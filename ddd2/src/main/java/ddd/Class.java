@@ -1,5 +1,7 @@
 package ddd;
 
+import ddd.exception.ExceedingMaxCapacityException;
+
 import java.util.UUID;
 
 public class Class {

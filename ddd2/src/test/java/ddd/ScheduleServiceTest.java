@@ -1,5 +1,6 @@
 package ddd;
 
+import ddd.exception.ExceedingMaxCapacityException;
 import org.junit.Test;
 
 

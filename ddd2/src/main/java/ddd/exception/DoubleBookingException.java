@@ -1,4 +1,4 @@
-package ddd;
+package ddd.exception;
 
 public class DoubleBookingException extends RuntimeException {
     public DoubleBookingException(String message){

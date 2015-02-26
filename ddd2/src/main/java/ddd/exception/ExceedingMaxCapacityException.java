@@ -1,4 +1,4 @@
-package ddd;
+package ddd.exception;
 
 public class ExceedingMaxCapacityException extends RuntimeException {
 

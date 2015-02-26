@@ -1,5 +1,7 @@
 package ddd;
 
+import ddd.exception.DoubleBookingException;
+
 import java.util.UUID;
 
 public class Student {

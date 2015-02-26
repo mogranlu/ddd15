@@ -2,6 +2,7 @@ package ddd;
 
 import static org.junit.Assert.*;
 
+import ddd.exception.ExceedingMaxCapacityException;
 import org.junit.Test;
 
 public class ClassTest {
