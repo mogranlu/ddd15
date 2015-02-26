@@ -4,9 +4,9 @@ import org.junit.Test;
 
 public class FooTest {
 
-	@Test
+	@Test(expected=UnsupportedOperationException.class)
 	public void testFoo() throws Exception {
-		throw new RuntimeException("not yet implemented");
+		new Foo();
 	}
 
 }

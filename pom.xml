@@ -9,6 +9,21 @@
 	<version>1.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
+	<description>
+		A scaffold/blueprint setup for a TDD project using Maven, Eclipse, JUnit, hamrest, fest etc...
+		Meant primarily to refresh maven, tdd and git skills.
+	</description>
+
+	<inceptionYear>2015</inceptionYear>
+
+	<contributors>
+		<contributor>
+			<name>Morten Granlund</name>
+			<role>Grasshopper</role>
+		</contributor>
+	</contributors>
+
+
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
