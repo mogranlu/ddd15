@@ -21,7 +21,7 @@ public class ClassTest {
 		Class class1 = new Class(10);
 		try {
 			for (int i = 0; i < 10; i++) {
-				Enrollment enrollment = class1.doEnroll();
+				class1.doEnroll();
 			}
 		} catch (ExceedingMaxCapacityException e) {
 			fail();
@@ -33,7 +33,7 @@ public class ClassTest {
 			throws Exception {
 		Class class1 = new Class(10);
 		for (int i = 0; i < 11; i++) {
-			Enrollment enrollment = class1.doEnroll();
+			class1.doEnroll();
 		}
 	}
 
