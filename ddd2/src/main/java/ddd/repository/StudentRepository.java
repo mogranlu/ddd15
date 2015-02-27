@@ -11,16 +11,19 @@ public class StudentRepository implements IStudentRepository {
 
 	private static StudentRepository instance = null;
     private Map<UUID, Boolean> paymentDB;
+    private Map<UUID, Student> students;
 
 	private StudentRepository() {
 		if (paymentDB == null) {
-			paymentDB = new HashMap<UUID, Boolean>();
+			paymentDB = new HashMap<>();
 		}
+        if (students == null){
+            students = new HashMap<>();
+        }
 	}
 
 	@Override
 	public boolean hasStudentPaid(UUID studentId) {
-		// TODO Auto-generated method stub
 		return paymentDB.get(studentId) != null && paymentDB.get(studentId);
 	}
 	
@@ -29,7 +32,6 @@ public class StudentRepository implements IStudentRepository {
 		paymentDB.put(studentId, true);
 	}
 	
-
 	public static StudentRepository getInstance() {
 		if (instance == null) {
 			instance = new StudentRepository();
@@ -39,8 +41,7 @@ public class StudentRepository implements IStudentRepository {
 
 	@Override
 	public Student getStudentById(UUID studentId) {
-		// TODO Auto-generated method stub
-		return null;
+		return students.get(studentId);
 	}
 
 

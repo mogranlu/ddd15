@@ -18,7 +18,7 @@ public class AssignApplicationService {
 		Class class1 = classRepository.getClassById(classId);
 
 		AssignService assignService = new AssignService(); 
-        assignService.assignTeacherToAClass(teacherId, classId);
+        assignService.assignTeacherToAClass(teacher, class1);
 	}
 	
 
