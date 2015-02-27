@@ -1,5 +1,6 @@
-package ddd;
+package ddd.domain;
 
+import ddd.Enrollment;
 import ddd.exception.ExceedingMaxCapacityException;
 
 import java.util.UUID;

@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
 
-import ddd.Student;
+import ddd.domain.Student;
 
 public class StudentRepository implements IStudentRepository {
 

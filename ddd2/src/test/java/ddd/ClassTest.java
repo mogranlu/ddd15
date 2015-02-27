@@ -2,6 +2,7 @@ package ddd;
 
 import static org.junit.Assert.*;
 
+import ddd.domain.Class;
 import ddd.exception.ExceedingMaxCapacityException;
 import org.junit.Test;
 
@@ -9,7 +10,7 @@ public class ClassTest {
 
 	@Test
 	public void testThatClassHasCapacityLimit() throws Exception {
-		new Class(30);
+		new ddd.domain.Class(30);
 	}
 
 	@Test(expected = ExceedingMaxCapacityException.class)

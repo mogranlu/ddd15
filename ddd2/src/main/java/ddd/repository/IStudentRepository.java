@@ -1,6 +1,6 @@
 package ddd.repository;
 
-import ddd.Student;
+import ddd.domain.Student;
 
 import java.util.UUID;
 

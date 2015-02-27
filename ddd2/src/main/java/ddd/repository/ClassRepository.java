@@ -1,6 +1,6 @@
 package ddd.repository;
 
-import ddd.Class;
+import ddd.domain.Class;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -17,7 +17,7 @@ public class ClassRepository implements IClassRepository {
     }
 
     @Override
-    public ddd.Class getClassById(UUID classId) {
+    public Class getClassById(UUID classId) {
         return classes.get(classId);
     }
 }

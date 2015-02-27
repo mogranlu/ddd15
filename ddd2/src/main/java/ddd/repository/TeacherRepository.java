@@ -1,6 +1,6 @@
 package ddd.repository;
 
-import ddd.*;
+import ddd.domain.Teacher;
 
 import java.util.HashMap;
 import java.util.Map;

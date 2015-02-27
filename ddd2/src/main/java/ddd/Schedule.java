@@ -13,7 +13,7 @@ public class Schedule {
         this.enrollmentList = new ArrayList<Enrollment>();
     }
 
-    public boolean canAccept(Class class1) {
+    public boolean canAccept(ddd.domain.Class class1) {
         return this.enrollmentList.size() < this.maxClasses;
     }
 

@@ -1,5 +1,7 @@
 package ddd;
 
+import ddd.domain.Class;
+import ddd.domain.Student;
 import ddd.exception.ExceedingMaxCapacityException;
 import org.junit.Test;
 
@@ -8,7 +10,7 @@ public class ScheduleServiceTest {
 	@Test
 	public void testSchedulerObjectInstanciation() {
 		ScheduleService scheduler = new ScheduleService();
-		scheduler.enrollStudentInClass(new Student(), new Class(10));
+		scheduler.enrollStudentInClass(new Student(), new ddd.domain.Class(10));
 	}
 
 	@Test(expected = ExceedingMaxCapacityException.class)

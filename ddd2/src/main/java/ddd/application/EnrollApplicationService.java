@@ -1,6 +1,7 @@
 package ddd.application;
 
 import ddd.*;
+import ddd.domain.Student;
 import ddd.repository.IClassRepository;
 import ddd.repository.IStudentRepository;
 
@@ -17,7 +18,7 @@ public class EnrollApplicationService {
 	
 	public void enroll(UUID studentId, UUID classId) {
 		Student s = studentRepository.getStudentById(studentId);
-		ddd.Class class1 = classRepository.getClassById(classId);
+		ddd.domain.Class class1 = classRepository.getClassById(classId);
 
         ScheduleService scheduleService1 = new ScheduleService();
         scheduleService1.enrollStudentInClass(s, class1);

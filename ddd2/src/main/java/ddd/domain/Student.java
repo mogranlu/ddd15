@@ -1,5 +1,7 @@
-package ddd;
+package ddd.domain;
 
+import ddd.Schedule;
+import ddd.domain.Class;
 import ddd.exception.DoubleBookingException;
 
 import java.util.UUID;
@@ -14,7 +16,7 @@ public class Student {
         this.id = UUID.randomUUID();
         this.schedule = new Schedule();
     }
-    public void tryEnroll(Class class1) throws DoubleBookingException {
+    public void tryEnroll(ddd.domain.Class class1) throws DoubleBookingException {
         if (!schedule.canAccept(class1)) throw new DoubleBookingException("Double booking???");
     }
 

@@ -1,4 +1,4 @@
-package ddd;
+package ddd.domain;
 
 public class Teacher {
 }

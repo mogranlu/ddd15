@@ -1,6 +1,7 @@
 package ddd.application;
 
 import ddd.*;
+import ddd.domain.Teacher;
 import ddd.repository.IClassRepository;
 import ddd.repository.ITeacherRepository;
 
@@ -19,7 +20,7 @@ public class AssignApplicationService {
 	
 	public void enroll(UUID teacherId, UUID classId) {
 		Teacher teacher = teacherRepository.getTeacherById(teacherId);
-		ddd.Class class1 = classRepository.getClassById(classId);
+		ddd.domain.Class class1 = classRepository.getClassById(classId);
 
 		AssignService assignService = new AssignService(); 
         assignService.assignTeacherToAClass(teacher, class1);
