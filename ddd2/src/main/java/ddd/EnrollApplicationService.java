@@ -5,12 +5,10 @@ import java.util.UUID;
 public class EnrollApplicationService {
 	private IClassRepository classRepository;
 	private IStudentRepository studentRepository;
-	private ICanCheckPaymentStatus paymentStatusChecker;
 
-	public EnrollApplicationService(IStudentRepository studRepo, IClassRepository classRepo, ICanCheckPaymentStatus paymentChecker) {
+	public EnrollApplicationService(IStudentRepository studRepo, IClassRepository classRepo) {
 		classRepository = classRepo;
 		studentRepository = studRepo;
-		paymentStatusChecker = paymentChecker;
 	}
 	
 	public void enroll(UUID studentId, UUID classId) {
