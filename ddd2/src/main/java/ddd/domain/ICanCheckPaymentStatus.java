@@ -1,4 +1,4 @@
-package ddd;
+package ddd.domain;
 
 import java.util.UUID;
 

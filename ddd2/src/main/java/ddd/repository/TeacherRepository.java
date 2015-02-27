@@ -1,5 +1,6 @@
 package ddd.repository;
 
+import ddd.domain.ITeacherRepository;
 import ddd.domain.Teacher;
 
 import java.util.HashMap;

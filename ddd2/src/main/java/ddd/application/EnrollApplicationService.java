@@ -1,9 +1,9 @@
 package ddd.application;
 
 import ddd.*;
+import ddd.domain.IClassRepository;
+import ddd.domain.IStudentRepository;
 import ddd.domain.Student;
-import ddd.repository.IClassRepository;
-import ddd.repository.IStudentRepository;
 
 import java.util.UUID;
 

@@ -1,4 +1,4 @@
-package ddd.repository;
+package ddd.domain;
 
 import java.util.UUID;
 

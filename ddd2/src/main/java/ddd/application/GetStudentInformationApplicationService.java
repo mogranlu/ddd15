@@ -2,9 +2,9 @@ package ddd.application;
 
 import java.util.UUID;
 
+import ddd.domain.IStudentRepository;
 import ddd.domain.Student;
 import ddd.dto.StudentDTO;
-import ddd.repository.IStudentRepository;
 
 public class GetStudentInformationApplicationService {
 	private IStudentRepository studRepo;

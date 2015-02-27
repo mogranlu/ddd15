@@ -2,7 +2,7 @@ package ddd;
 
 import java.util.UUID;
 
-import ddd.ICanCheckPaymentStatus;
+import ddd.domain.ICanCheckPaymentStatus;
 import ddd.repository.StudentRepository;
 
 public class StudentService implements ICanCheckPaymentStatus {

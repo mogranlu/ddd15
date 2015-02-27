@@ -1,7 +1,7 @@
 package ddd.application;
 
+import ddd.domain.IStudentRepository;
 import ddd.domain.Student;
-import ddd.repository.IStudentRepository;
 
 public class CreateStudentApplicationService {
 	
