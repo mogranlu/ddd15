@@ -5,6 +5,7 @@ import java.util.Map;
 import java.util.UUID;
 
 import ddd.IStudentRepository;
+import ddd.Student;
 
 public class StudentRepository implements IStudentRepository {
 
@@ -34,6 +35,12 @@ public class StudentRepository implements IStudentRepository {
 			instance = new StudentRepository();
 		}
 		return instance;
+	}
+
+	@Override
+	public Student getStudentById(UUID studentId) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 
