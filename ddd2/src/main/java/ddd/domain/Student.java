@@ -9,7 +9,6 @@ import java.util.UUID;
 
 public class Student {
 
-	private int numberOfClassesInSemester;
 	private UUID id;
     private String name;
     private String birthDay;
