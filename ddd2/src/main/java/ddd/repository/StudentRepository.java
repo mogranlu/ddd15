@@ -10,7 +10,7 @@ import ddd.Student;
 public class StudentRepository implements IStudentRepository {
 
 	private static StudentRepository instance = null;
-	private Map<UUID, Boolean> paymentDB;
+    private Map<UUID, Boolean> paymentDB;
 
 	private StudentRepository() {
 		if (paymentDB == null) {
