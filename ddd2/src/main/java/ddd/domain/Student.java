@@ -23,4 +23,8 @@ public class Student {
     public void doEnroll(Class class1){
         this.schedule.addEnrollment(class1.generateEnrollment(this.id));
     }
+	public UUID getId() {
+		// TODO Auto-generated method stub
+		return id;
+	}
 }
