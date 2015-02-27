@@ -1,4 +1,8 @@
-package ddd;
+package ddd.application;
+
+import ddd.*;
+import ddd.repository.IClassRepository;
+import ddd.repository.ITeacherRepository;
 
 import java.util.UUID;
 
@@ -15,7 +19,7 @@ public class AssignApplicationService {
 	
 	public void enroll(UUID teacherId, UUID classId) {
 		Teacher teacher = teacherRepository.getTeacherById(teacherId);
-		Class class1 = classRepository.getClassById(classId);
+		ddd.Class class1 = classRepository.getClassById(classId);
 
 		AssignService assignService = new AssignService(); 
         assignService.assignTeacherToAClass(teacher, class1);

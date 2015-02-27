@@ -1,4 +1,6 @@
-package ddd;
+package ddd.repository;
+
+import ddd.Student;
 
 import java.util.UUID;
 
