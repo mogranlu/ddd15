@@ -1,5 +1,6 @@
 package ddd.domain;
 
+import ddd.Gender;
 import ddd.Schedule;
 import ddd.domain.Class;
 import ddd.exception.DoubleBookingException;
@@ -10,6 +11,9 @@ public class Student {
 
 	private int numberOfClassesInSemester;
 	private UUID id;
+    private String name;
+    private String birthDay;
+    private Gender gender;
 	private Schedule schedule;
 
     public Student(){
@@ -23,8 +27,21 @@ public class Student {
     public void doEnroll(Class class1){
         this.schedule.addEnrollment(class1.generateEnrollment(this.id));
     }
+
 	public UUID getId() {
-		// TODO Auto-generated method stub
 		return id;
 	}
+
+    public String getName(){
+        return name;
+    }
+
+    public String getBirthDay(){
+        return birthDay;
+    }
+
+    public String getGender(){
+        return gender.name();
+    }
+
 }
