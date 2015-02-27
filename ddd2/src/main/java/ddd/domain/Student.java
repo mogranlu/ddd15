@@ -2,7 +2,6 @@ package ddd.domain;
 
 import ddd.Gender;
 import ddd.Schedule;
-import ddd.domain.Class;
 import ddd.exception.DoubleBookingException;
 
 import java.util.UUID;

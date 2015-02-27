@@ -4,7 +4,8 @@ import java.util.UUID;
 
 import ddd.domain.IStudentRepository;
 import ddd.domain.Student;
-import ddd.dto.StudentDTO;
+import ddd.schema.StudentDTO;
+import ddd.domain.IStudentRepository;
 
 public class GetStudentInformationApplicationService {
 	private IStudentRepository studRepo;

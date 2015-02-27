@@ -1,16 +1,16 @@
-package ddd.dto;
+package ddd.schema;
 
 
 import java.util.UUID;
 
-public class TeacherDTO {
+public class StudentDTO {
 
     private final UUID id;
     private final String name;
     private final String birthday;
     private final String gender;
 
-    public TeacherDTO(UUID id, String name, String birthday, String gender){
+    public StudentDTO(UUID id, String name, String birthday, String gender){
         this.id = id;
         this.name = name;
         this.birthday = birthday;
